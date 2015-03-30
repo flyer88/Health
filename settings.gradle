@@ -1,1 +1,1 @@
-include ':app', ':testwebview'
+include ':app', ':testwebview', ':testtoolbar'

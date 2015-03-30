@@ -4,18 +4,15 @@
     </style>
 
 
-    <!--style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/material_deep_teal_200</item>
-        <item name="colorPrimaryDark">@color/material_deep_teal_500</item>
-        <item name="android:windowBackground">@android:color/darker_gray</item>
-        <item name="android:textColorPrimary">@color/material_blue_grey_800</item>
-        <item name="android:navigationBarColor">@color/material_deep_teal_500</item>
-    </style-->
-
-
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
-
+        <item name="colorPrimary">@color/light_blue_500</item>
+        <item name="colorPrimaryDark">@color/light_blue_a400</item>
+        <item name="colorControlNormal">#000</item>
+        <item name="colorControlActivated">@color/light_blue_500</item>
     </style>
-
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 
 </resources>

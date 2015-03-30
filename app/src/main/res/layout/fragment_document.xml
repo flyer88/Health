@@ -1,11 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:id="@+id/document_fragment"
-    android:layout_height="match_parent">
-    <TextView
-        android:gravity="center"
-        android:text="document"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/patient_document_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    <ProgressBar
+        android:id="@+id/document_fragment_progress_bar"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        fab:fab_addButtonColorNormal="@color/light_blue_500"
+        fab:fab_addButtonColorPressed="@color/light_blue_a700"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_expandDirection="up"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/document_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+            fab:fab_colorNormal="@color/light_blue_500"
+            fab:fab_colorPressed="@color/light_blue_a700"
+            fab:fab_size="mini"/>
+
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/document_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            fab:fab_plusIconColor="@color/white"
+            fab:fab_colorNormal="@color/light_blue_500"
+            fab:fab_colorPressed="@color/light_blue_a700"
+            fab:fab_size="mini"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

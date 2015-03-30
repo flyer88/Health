@@ -7,6 +7,10 @@ import android.app.Application;
  */
 public class HealthApp extends Application{
 
-    public static String USER_TYPE = "Patient";
-    public static int FIRST_TIME_OPEN = 0;
+    public static int FIRST_TIME_LOGIN = 0;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+    }
 }

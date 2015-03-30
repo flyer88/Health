@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
     android:id="@+id/notification_fragment"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:gravity="center"
-        android:text="notification"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/notification_fragment_doctor_view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0">
+
+        </android.support.v4.view.ViewPager>
+    <LinearLayout
+
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/notification_fragment_image_request"
+                android:scaleType="centerInside"
+                android:background="#fff"
+                android:src="@drawable/request"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <TextView
+                android:hint="患者提问"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/notification_fragment_image_question"
+                android:scaleType="centerInside"
+                android:background="#fff"
+                android:src="@drawable/question"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <TextView
+                android:hint="患者申请"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

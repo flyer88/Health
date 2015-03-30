@@ -17,10 +17,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.MainActivity">
-
-        </activity>
+        <activity android:name=".Activity.MainActivity"></activity>
         <activity android:name=".Activity.RegisterActivity"></activity>
+        <activity android:name=".Activity.EditEncylopediaActivity"></activity>
+        <activity android:name=".Activity.PublishedEncylopediaActivity"></activity>
+        <activity android:name=".Activity.PatientQestionActivity"></activity>
+        <activity android:name=".Activity.PatientRequestActivity"></activity>
+        <activity android:name=".Activity.DoctorInfoActivity"></activity>
+        <activity android:name=".Activity.AddMettingActivity"></activity>
+        <activity android:name=".Activity.EditPatientHeadActivity"></activity>
+        <activity android:name=".Activity.EditDoctorHeadActivity"></activity>
+        <activity android:name=".Activity.AddDocumentActivity"></activity>
     </application>
 
 </manifest>

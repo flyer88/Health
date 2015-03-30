@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by flyer on 15/3/17.
  */
-public class User implements Serializable{
+public abstract class User implements Serializable{
 
     String id;
     String pwd;
@@ -33,4 +33,7 @@ public class User implements Serializable{
     public String getUserType(){
         return this.userType;
     }
+
+    public abstract  String[] getNavigationList();
+
 }
